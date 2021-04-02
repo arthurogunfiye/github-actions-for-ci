@@ -1,6 +1,12 @@
 # GitHub Actions can run multiple workflows for different event triggers.
 # Events that trigger workflows - https://docs.github.com/en/actions/reference/events-that-trigger-workflows
+# an action can be added that adds a label to any PR after a preset number of approvals
+# These labels act as a visual indicator that something is ready to be merged or use other actions to automatically merge PRs when approved.
 
 name: Team Awesome's approval workflow
 
 on: pull_request_review
+
+jobs:
+  labelWhenApproved:
+    runs-on: ubuntu-latest
