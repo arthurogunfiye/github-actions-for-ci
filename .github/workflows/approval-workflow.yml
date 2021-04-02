@@ -1,3 +1,6 @@
 # GitHub Actions can run multiple workflows for different event triggers.
+# Events that trigger workflows - https://docs.github.com/en/actions/reference/events-that-trigger-workflows
 
 name: Team Awesome's approval workflow
+
+on: pull_request_review
