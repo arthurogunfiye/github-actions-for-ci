@@ -1,0 +1,3 @@
+# GitHub Actions can run multiple workflows for different event triggers.
+
+name: Team Awesome's approval workflow
